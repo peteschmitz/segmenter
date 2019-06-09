@@ -36,6 +36,26 @@
                 "run-script",
                 "build"
             ]
+        },
+        {
+            "name": "Publish",
+            "type": "node",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": [
+                "run-script",
+                "build",
+                "&&",
+                "npm",
+                "run-script",
+                "test",
+                "&&",
+                "npm",
+                "publish",
+                "--access",
+                "public"
+            ]
         }
     ]
 }

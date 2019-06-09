@@ -1,37 +1,37 @@
 {
-  "name": "@~graphite/segmenter",
-  "version": "1.0.0",
-  "description": "Extensible utilities for predictably bucketing data (A/B testing, etc)",
-  "main": "index.js",
-  "scripts": {
-    "build": "tsc",
-    "test": "jest",
-    "test:debug": "node --inspect node_modules/.bin/jest --runInBand"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/peteschmitz/segmenter.git"
-  },
-  "keywords": [
-    "segmenter",
-    "segment",
-    "segmentation",
-    "ab",
-    "bucket",
-    "bucketing"
-  ],
-  "author": "Pete Schmitz",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/peteschmitz/segmenter/issues"
-  },
-  "homepage": "https://github.com/peteschmitz/segmenter#readme",
-  "devDependencies": {
-    "@types/jest": "^24.0.13",
-    "babel-jest": "^24.8.0",
-    "jest": "^24.8.0",
-    "ts-jest": "^24.0.2",
-    "tslint": "^5.16.0",
-    "typescript": "^3.5.1"
-  }
+    "name": "@~graphite/segmenter",
+    "version": "1.0.3",
+    "description": "Extensible utilities for predictably bucketing data (A/B testing, etc)",
+    "main": "./bin/index.js",
+    "scripts": {
+        "build": "tsc",
+        "test": "jest",
+        "test:debug": "node --inspect node_modules/.bin/jest --runInBand"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/peteschmitz/segmenter.git"
+    },
+    "keywords": [
+        "segmenter",
+        "segment",
+        "segmentation",
+        "ab",
+        "bucket",
+        "bucketing"
+    ],
+    "author": "Pete Schmitz",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/peteschmitz/segmenter/issues"
+    },
+    "homepage": "https://github.com/peteschmitz/segmenter#readme",
+    "devDependencies": {
+        "@types/jest": "^24.0.13",
+        "babel-jest": "^24.8.0",
+        "jest": "^24.8.0",
+        "ts-jest": "^24.0.2",
+        "tslint": "^5.16.0",
+        "typescript": "^3.5.1"
+    }
 }
