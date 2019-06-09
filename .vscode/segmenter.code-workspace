@@ -1,0 +1,17 @@
+{
+    "folders": [
+        {
+            "path": "./.."
+        }
+    ],
+    "settings": {
+        "typescript.preferences.importModuleSpecifier": "relative",
+        "editor.detectIndentation": false,
+        "editor.autoClosingQuotes": "never",
+        "editor.formatOnSave": true,
+        "editor.formatOnPaste": true,
+        "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
+        "typescript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
+        "typescript.tsdk": "node_modules\\typescript\\lib"
+    }
+}

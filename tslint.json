@@ -1,0 +1,45 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint:recommended"
+    ],
+    "jsRules": {},
+    "rules": {
+        "max-classes-per-file": false,
+        "no-trailing-whitespace": false,
+        "no-empty-interface": false,
+        "interface-name": false,
+        "no-console": false,
+        "object-literal-sort-keys": false,
+        "max-line-length": false,
+        "trailing-comma": [
+            false
+        ],
+        "typedef-whitespace": [
+            true,
+            {
+                "call-signature": "nospace",
+                "index-signature": "nospace",
+                "parameter": "nospace",
+                "property-declaration": "nospace",
+                "variable-declaration": "nospace"
+            },
+            {
+                "call-signature": "onespace",
+                "index-signature": "onespace",
+                "parameter": "onespace",
+                "property-declaration": "onespace",
+                "variable-declaration": "onespace"
+            }
+        ],
+        "whitespace": [
+            false,
+            "check-branch",
+            "check-decl",
+            "check-operator",
+            "check-separator",
+            "check-type"
+        ]
+    },
+    "rulesDirectory": []
+}

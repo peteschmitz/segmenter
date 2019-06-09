@@ -1,0 +1,41 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Test",
+            "type": "node",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": [
+                "run-script",
+                "test"
+            ]
+        },
+        {
+            "name": "Test (Debug)",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceRoot}\\node_modules\\jest\\bin\\jest.js",
+            "args": [
+                "-i"
+            ],
+            "preLaunchTask": "npm: build",
+            "internalConsoleOptions": "openOnSessionStart",
+            "outFiles": [
+                "${workspaceRoot}/bin/**/*"
+            ]
+        },
+        {
+            "name": "Build",
+            "type": "node",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": [
+                "run-script",
+                "build"
+            ]
+        }
+    ]
+}

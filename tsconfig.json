@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "module": "commonjs",
+        "esModuleInterop": true,
+        "target": "es6",
+        "noImplicitAny": true,
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "outDir": "bin",
+        "baseUrl": ".",
+        "paths": {
+            "*": [
+                "node_modules/*",
+            ]
+        }
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "src/**/*.test.ts"
+    ]
+}
