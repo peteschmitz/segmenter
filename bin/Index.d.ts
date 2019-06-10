@@ -1,2 +1,2 @@
-export * from "./Segmenters";
+export * from "./Segmenters/NumberSegmenter";
 export * from "./TypeSegmenter";

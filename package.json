@@ -1,6 +1,6 @@
 {
     "name": "@~graphite/segmenter",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "Extensible utilities for predictably bucketing data (A/B testing, etc)",
     "main": "./bin/index.js",
     "scripts": {
