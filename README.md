@@ -48,18 +48,20 @@ npm i @~graphite/segmenter-objectid
 ```javascript
 const segmenter = new ObjectIdSegmenter();
 
-segmenter.segments(new ObjectID("xxxxxxxxxxxxxxxxxx6761ba"), ["A", "B"], ["X", "Y"]); // ["A", "X"]
-segmenter.segments(new ObjectID("xxxxxxxxxxxxxxxxxx6761bb"), ["A", "B"], ["X", "Y"]); // ["A", "Y"]
-segmenter.segments(new ObjectID("xxxxxxxxxxxxxxxxxx6761bc"), ["A", "B"], ["X", "Y"]); // ["B", "X"]
+segmenter.segments(new ObjectId("xxxxxxxxxxxxxxxxxx000000"), ["A", "B"], ["X", "Y"]); // ["A", "X"]
+segmenter.segments(new ObjectId("xxxxxxxxxxxxxxxxxx000001"), ["A", "B"], ["X", "Y"]); // ["A", "Y"]
+segmenter.segments(new ObjectId("xxxxxxxxxxxxxxxxxx00000d"), ["A", "B"], ["X", "Y"]); // ["A", "Y"]
+segmenter.segments(new ObjectId("xxxxxxxxxxxxxxxxxx00000e"), ["A", "B"], ["X", "Y"]); // ["B", "X"]
 
 ```
 
-- Extensions are also supported for ObjectID:
+- Extensions are also supported for ObjectId:
 
 ```javascript
-new ObjectID("xxxxxxxxxxxxxxxxxx6761ba").segments(["A", "B"], ["X", "Y"]); // ["A", "X"]
-new ObjectID("xxxxxxxxxxxxxxxxxx6761bb").segments(["A", "B"], ["X", "Y"]); // ["A", "Y"]
-new ObjectID("xxxxxxxxxxxxxxxxxx6761bc").segments(["A", "B"], ["X", "Y"]); // ["B", "X"]
+new ObjectId("xxxxxxxxxxxxxxxxxx000000").segments(["A", "B"], ["X", "Y"]); // ["A", "X"]
+new ObjectId("xxxxxxxxxxxxxxxxxx000001").segments(["A", "B"], ["X", "Y"]); // ["A", "Y"]
+new ObjectId("xxxxxxxxxxxxxxxxxx00000d").segments(["A", "B"], ["X", "Y"]); // ["A", "Y"]
+new ObjectId("xxxxxxxxxxxxxxxxxx00000e").segments(["A", "B"], ["X", "Y"]); // ["B", "X"]
 
 ```
 
